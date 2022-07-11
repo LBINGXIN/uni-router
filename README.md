@@ -21,3 +21,7 @@ yarn
 ```shell
 npm run serve
 ```
+
+# 备注
+
+登录时，会使用 uni.setStorageSync("token", "uni_token123")；缓存一个测试的 token 到 localStorage，需要测试路由拦截时，可以手动删除 token。

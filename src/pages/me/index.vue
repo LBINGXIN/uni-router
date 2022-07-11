@@ -34,6 +34,7 @@ export default {
     // 退出登录
     handlelogout() {
       uni.removeStorageSync("token");
+      uni.$e.route("/pages/login/index");
     },
     // 路由跳转
     handleToRouter(path) {
